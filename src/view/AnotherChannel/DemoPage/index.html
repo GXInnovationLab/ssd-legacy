@@ -1,0 +1,13 @@
+<div class="p20 pb50">
+  <div v-if="isShowCard" class="article">
+    <h1 class="ff-song">{{title}}</h1>
+    <p class="ff-song content" v-html="content" />
+    <p class="f-l fs12">
+      <span class="tag" v-for="el in tag">{{el}}</span>
+    </p>
+    <p class="f-r fs12">
+      <span class="mr10">评论(15)</span>
+      <i @click="handleLike" class="el-icon-star-off like"></i>
+    </p>
+  </div>
+</div>
